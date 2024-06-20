@@ -33,30 +33,32 @@ Welcome to the **Hotel Reservation System**! This project is a console-based app
    
 2. **Set Up the Database:**
 
-Create a MySQL database named hotel_db and a reservations table by running the following SQL commands:
-CREATE DATABASE hotel_db;
+   Create a MySQL database named hotel_db and a reservations table by running the following SQL commands:
+   CREATE DATABASE hotel_db;
 
-USE hotel_db;
+   USE hotel_db;
 
-CREATE TABLE reservations (
-    reservation_id INT AUTO_INCREMENT PRIMARY KEY,
-    guest_name VARCHAR(100) NOT NULL,
-    room_number INT NOT NULL,
-    contact_number VARCHAR(15) NOT NULL,
-    reservation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+   CREATE TABLE reservations (
+       reservation_id INT AUTO_INCREMENT PRIMARY KEY,
+       guest_name VARCHAR(100) NOT NULL,
+       room_number INT NOT NULL,
+       contact_number VARCHAR(15) NOT NULL,
+       reservation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+   );
 
 3. **Modify Database Credentials:**
 
-Update the database credentials in HotelReservationSystem.java to match your MySQL setup:
-private static final String url = "jdbc:mysql://localhost:3306/hotel_db";
-private static final String username = "your_mysql_username";
-private static final String password = "your_mysql_password";
+    Update the database credentials in HotelReservationSystem.java to match your MySQL setup:
+    private static final String url = "jdbc:mysql://localhost:3306/hotel_db";
+    private static final String username = "your_mysql_username";
+    private static final String password = "your_mysql_password";
 
 4. **Compile the Project:**
+   
    javac -cp .:/path/to/mysql-connector-j-8.4.0.jar HotelReservationSystem.java
 
-5. **Run the Application:**
+6. **Run the Application:**
+   
    java -cp .:/path/to/mysql-connector-j-8.4.0.jar HotelReservationSystem
 
 
@@ -64,34 +66,41 @@ private static final String password = "your_mysql_password";
 
 1. **Reserve a Room:**
 
-Select option 1.
-Enter guest name, room number, and contact number.
-The system will confirm if the reservation was successful.
+   Select option 1.
+   
+   Enter guest name, room number, and contact number.
+   
+   The system will confirm if the reservation was successful.
 
-2. **View Reservations:**
+3. **View Reservations:**
 
-Select option 2.
-All current reservations will be displayed in a table format.
+   Select option 2.
+   
+   All current reservations will be displayed in a table format.
 
-3. **Get Room Number:**
+4. **Get Room Number:**
 
-Select option 3.
-Enter reservation ID and guest name to retrieve the room number.
+   Select option 3.
+   
+   Enter reservation ID and guest name to retrieve the room number.
 
-4. **Update Reservation:**
+5. **Update Reservation:**
 
-Select option 4.
-Enter reservation ID and new details to update the reservation.
+   Select option 4.
+   
+   Enter reservation ID and new details to update the reservation.
 
-5. **Delete Reservation:**
+7. **Delete Reservation:**
 
-Select option 5.
-Enter reservation ID to delete the reservation.
+   Select option 5.
+   
+   Enter reservation ID to delete the reservation.
 
-6. **Exit:**
+9. **Exit:**
 
-Select option 0 to exit the system gracefully.
+   Select option 0 to exit the system gracefully.
 
 
 **Contributing 🤝**
-Contributions are welcome! Please fork this repository and submit pull requests for any improvements.
+
+   Contributions are welcome! Please fork this repository and submit pull requests for any improvements.
