@@ -30,6 +30,7 @@ Welcome to the **Hotel Reservation System**! This project is a console-based app
    ```sh
    git clone https://github.com/your-username/HotelReservationSystem.git
    cd HotelReservationSystem
+   
 2. **Set Up the Database:**
 
 Create a MySQL database named hotel_db and a reservations table by running the following SQL commands:
@@ -60,29 +61,37 @@ private static final String password = "your_mysql_password";
 
 
 **How to Use 📝**
+
 1. **Reserve a Room:**
 
 Select option 1.
 Enter guest name, room number, and contact number.
 The system will confirm if the reservation was successful.
+
 2. **View Reservations:**
 
 Select option 2.
 All current reservations will be displayed in a table format.
+
 3. **Get Room Number:**
 
 Select option 3.
 Enter reservation ID and guest name to retrieve the room number.
+
 4. **Update Reservation:**
 
 Select option 4.
 Enter reservation ID and new details to update the reservation.
+
 5. **Delete Reservation:**
 
 Select option 5.
 Enter reservation ID to delete the reservation.
+
 6. **Exit:**
 
 Select option 0 to exit the system gracefully.
+
+
 **Contributing 🤝**
 Contributions are welcome! Please fork this repository and submit pull requests for any improvements.
